@@ -1,0 +1,3 @@
+[submodule "screepsAI"]
+	path = screepsAI
+	url = https://github.com/Balazzs/screepsAI

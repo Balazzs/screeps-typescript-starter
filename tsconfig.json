@@ -5,7 +5,7 @@
     "target": "es2017",
     "moduleResolution": "Node",
     "outDir": "dist",
-    "baseUrl": "src/",
+    "baseUrl": "screepsAI/",
     "sourceMap": true,
     "strict": true,
     "experimentalDecorators": true,
