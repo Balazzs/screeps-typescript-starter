@@ -15,7 +15,7 @@ if (!dest) {
 }
 
 export default {
-  input: "screepsAI/main.ts",
+  input: "screepsAI/src/main.ts",
   output: {
     file: "dist/main.js",
     format: "cjs",

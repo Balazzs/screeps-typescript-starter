@@ -5,7 +5,7 @@
   "main": "index.js",
   "//": "If you add or change the names of destinations in screeps.json, make sure you update these scripts to reflect the changes",
   "scripts": {
-    "lint": "tslint -p tsconfig.json \"screepsAI/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json \"screepsAI/src/**/*.ts\"",
     "build": "rollup -c",
     "push-main": "rollup -c --environment DEST:main",
     "push-pserver": "rollup -c --environment DEST:pserver",
@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/screepers/screeps-typescript-starter#readme",
   "devDependencies": {
+    "@fluffy-spoon/substitute": "^1.110.0",
     "@types/chai": "^4.1.6",
     "@types/lodash": "^3.10.1",
     "@types/mocha": "^5.2.5",
@@ -44,6 +45,7 @@
     "rollup-plugin-clear": "^2.0.7",
     "rollup-plugin-commonjs": "^9.1.4",
     "rollup-plugin-multi-entry": "^2.0.2",
+    "rollup-plugin-node-builtins": "^2.1.2",
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-nodent": "^0.2.2",
     "rollup-plugin-screeps": "^0.1.2",

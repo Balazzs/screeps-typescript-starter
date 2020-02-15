@@ -6,9 +6,10 @@ import commonjs from "rollup-plugin-commonjs";
 import typescript from "rollup-plugin-typescript2";
 import buble      from 'rollup-plugin-buble';
 import multiEntry from 'rollup-plugin-multi-entry';
+import builtins from 'rollup-plugin-node-builtins';
 
 export default {
-  input: 'test/unit/**/*.test.ts',
+  input: 'screepsAI/test/unit/**/*.test.ts',
   output: {
     file: 'dist/test-unit.bundle.js',
     name: 'lib',
@@ -23,10 +24,11 @@ export default {
   external: ['chai', 'it', 'describe'],
   plugins: [
     clear({ targets: ["dist/test.bundle.js"] }),
+    builtins(),
     resolve(),
     commonjs(),
     typescript({tsconfig: "./tsconfig.json"}),
     multiEntry(),
-    buble()
+    buble(),
   ]
 }

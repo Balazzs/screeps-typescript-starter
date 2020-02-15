@@ -9,7 +9,7 @@ import multiEntry from 'rollup-plugin-multi-entry';
 import nodent from 'rollup-plugin-nodent';
 
 export default {
-  input: 'test/integration/**/*.test.ts',
+  input: 'screepsAI/test/integration/**/*.test.ts',
   output: {
     file: 'dist/test-integration.bundle.js',
     name: 'lib',
