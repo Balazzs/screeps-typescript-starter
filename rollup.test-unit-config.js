@@ -27,7 +27,7 @@ export default {
     builtins(),
     resolve(),
     commonjs(),
-    typescript({tsconfig: "./tsconfig.json"}),
+    typescript({tsconfig: "./tsconfig.test-unit.json"}),
     multiEntry(),
     buble(),
   ]
