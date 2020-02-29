@@ -29,6 +29,6 @@ export default {
     commonjs(),
     typescript({tsconfig: "./tsconfig.test-unit.json"}),
     multiEntry(),
-    buble(),
+    //buble(),
   ]
 }
