@@ -4,6 +4,9 @@
 # npm lock file (v5.0.0+)
 /package-lock.json
 
+#nyc
+.nyc_output
+
 # Ignore basic folders
 /dist
 /.rpt2_cache
