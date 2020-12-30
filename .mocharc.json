@@ -1,0 +1,14 @@
+{
+    "diff": true,
+    "extension"     : ["ts, tsx"],
+    "reporter"      : "spec",
+    "timeout"       : 5000,
+    "ui"            : "bdd",
+    "full-trace"    : true,
+    "color"         : true,
+    "recursive"     : true,
+    "exit"          : true,
+    "require"       : ["test/setup-mocha.js",
+                       "ts-node/register",
+                       "tsconfig-paths/register"]
+  }
